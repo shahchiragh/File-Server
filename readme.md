@@ -9,9 +9,9 @@ Objectives:
 2. Implementing Uploading and Downloading of Files
 
 Project Specification:
-Socket programming is so universal that you can probably find major portions of this part of the program with searching on Google. 
-A simple file exchange system consisting of one file server and three client processes. Each client process will connect to the server over a socket connection and provide a unique user name to be displayed at the server. The server will display the names of clients when the clients are connected.
-When a client connects to the server, it will offer four options (e.g. the “Default Menu”) to the user via a simple GUI (using the command line is not acceptable):
+	Socket programming is so universal that you can probably find major portions of this part of the program with searching on Google. 
+	A simple file exchange system consisting of one file server and three client processes. Each client process will connect to the server over a socket connection and provide a unique user name to be displayed at the server. The server will display the names of clients when the clients are connected.
+	When a client connects to the server, it will offer four options (e.g. the “Default Menu”) to the user via a simple GUI (using the command line is not acceptable):
 1. Upload a file;
 2. Check for available files;
 3. Download a file;
@@ -30,25 +30,25 @@ The server should print the full text of the HTTP message to a simple GUI for in
 The program operates independently of a browser. Time on the messages should be encoded according to HTTP.
 
 Code Structure:
-1. FileServerApplication is Multithreaded TCP Server Application. The folder consists of FileServerApplication.sln file which
+1. FileServerApplication is Multi-threaded TCP Server Application. The folder consists of FileServerApplication.sln file which
 can be opened with a Visual Studio 2013+ versions. Also, it consists FileServeApplication folder which has Application
 configurations, form properties, etc.
 2. FileServerClient is TCP Client Application. The folder consists of FileServeClient.sln file which
 can be opened with a Visual Studio 2013+ versions. Also, it consists FileServeApplication folder which has Application
 configurations, form properties, etc.
 3. Both applications has usage of Sockets to accomplish TCP connection and does not use and HTTP tags or mechanisms.
-4. The FileServerApplication uses a hardcoded path "E:\\FT" for getting the files uploaded.
-5. The FileServerClient Application uses a hardcoded path ""E:\\FTDownload" for downloading the files at clients location.
+4. The FileServerApplication uses a hard coded path "E:\\FT" for getting the files uploaded. (E:// is a root source in my project, you can tweak this path according your folder structure)
+5. The FileServerClient Application uses a hard coded path ""E:\\FTDownload" for downloading the files at clients location.
 6. For above both applications, the path names can be changed at receivedPath for both the applications respectively inside Form1.cs. 
 
 
 
 Run Code:
 1. To directly run Server, go to path
-..\FileServerApplication\FileServerApplication\bin\Debug open FileServerApplication.exe
+	..\FileServerApplication\FileServerApplication\bin\Debug open FileServerApplication.exe
 
-2. 1. To directly run Client, go to path
-..\FileServerApplication\FileServerClient\bin\Debug open FileServerClient.exe
+2. To directly run Client, go to path
+	..\FileServerApplication\FileServerClient\bin\Debug open FileServerClient.exe
 
 3. If exe's are not permitted to be executed then .sln files can be imported to Visual Studio and project solutions can be built 
 and can be executed from Visual Studio.
