@@ -24,8 +24,8 @@ The connection to the server will remain open until the client explicitly choose
  - If the user to chooses to “Download a file,” the user will be presented with a simple GUI that displays a list of available files at the server and prompted to select a file to download. The user will be notified when the file download is complete.
 
 The server handles multiple socket connections simultaneously. However, uploading and downloading files may be serialized if necessary. Clients will not attempt to download the same file concurrently.
-The file exchange may be performed using whatever mechanism is most convenient and does not need to utilize HTTP. All other commands should be encapsulated in HTTP – this includes listing the available files at the server.
-The HTTP tags must use, at minimum, Host, User-Agent, Content-Type, Content-Length, and Date. If you are polling the server, use GET. If you are sending data to the server, use POST.
+The file exchange may be performed using whatever mechanism is most convenient and does not need to utilize HTTP. All other commands will be encapsulated in HTTP – this includes listing the available files at the server.
+The HTTP tags uses, at minimum, Host, User-Agent, Content-Type, Content-Length, and Date. If you are polling the server, use GET. If you are sending data to the server, use POST.
 The server will print the full text of the HTTP message to a simple GUI for inspection. The clients should strip the HTTP metadata and display only relevant portions of the message.
 The program operates independently of a browser. Time on the messages should be encoded according to HTTP.
 
