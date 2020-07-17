@@ -26,7 +26,7 @@ The connection to the server will remain open until the client explicitly choose
 The server handles multiple socket connections simultaneously. However, uploading and downloading files may be serialized if necessary. Clients will not attempt to download the same file concurrently.
 The file exchange may be performed using whatever mechanism is most convenient and does not need to utilize HTTP. All other commands should be encapsulated in HTTP – this includes listing the available files at the server.
 The HTTP tags must use, at minimum, Host, User-Agent, Content-Type, Content-Length, and Date. If you are polling the server, use GET. If you are sending data to the server, use POST.
-The server should print the full text of the HTTP message to a simple GUI for inspection by the TA. The clients should strip the HTTP metadata and display only relevant portions of the message.
+The server will print the full text of the HTTP message to a simple GUI for inspection. The clients should strip the HTTP metadata and display only relevant portions of the message.
 The program operates independently of a browser. Time on the messages should be encoded according to HTTP.
 
 Code Structure:
