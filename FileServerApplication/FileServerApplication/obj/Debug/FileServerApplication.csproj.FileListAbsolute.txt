@@ -1,0 +1,8 @@
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\bin\Debug\FileServerApplication.exe.config
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\bin\Debug\FileServerApplication.exe
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\bin\Debug\FileServerApplication.pdb
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\obj\Debug\FileServerApplication.fileServerForm.resources
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\obj\Debug\FileServerApplication.Properties.Resources.resources
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\obj\Debug\FileServerApplication.csproj.GenerateResource.Cache
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\obj\Debug\FileServerApplication.exe
+E:\UTA\SEM-Summer\Labs\Lab-1\FileServerApplication\FileServerApplication\obj\Debug\FileServerApplication.pdb
